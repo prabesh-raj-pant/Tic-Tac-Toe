@@ -1,0 +1,19 @@
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 50%;
+    margin: 1rem auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: rgb(25, 41, 41);
+}
+header{
+        width: 50%;
+        margin: 1em auto;
+}
+.square{
+   min-height: 1.3em;
+   background-color: rgb(255, 255, 255);
+   font-size: 5rem;
+   text-align: center;
+}
