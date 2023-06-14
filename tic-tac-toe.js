@@ -134,9 +134,16 @@ function check() {
     h = document.getElementById('b8').textContent;
     i = document.getElementById('b9').textContent;
     if ((a=="X"&&b=="X"&&c=="X")||(d=="X"&&e=="X"&&f=="X")||(g=="X"&&h=="X"&&i=="X")||(a=="X"&&d=="X"&&g=="X")||(b=="X"&&e=="X"&&h=="X")||(c=="X"&&f=="X"&&i=="X")||(a=="X"&&e=="X"&&i=="X")||(c=="X"&&e=="X"&&g=="X")){
-        alert("player X won the game");
+        alert("player 1 won the game");
+        location.reload();
     }
     else if ((a=="O"&&b=="O"&&c=="O")||(d=="O"&&e=="O"&&f=="O")||(g=="O"&&h=="O"&&i=="O")||(a=="O"&&d=="O"&&g=="O")||(b=="O"&&e=="O"&&h=="O")||(c=="O"&&f=="O"&&i=="O")||(a=="O"&&e=="O"&&i=="O")||(c=="O"&&e=="O"&&g=="O")){
-        alert("player O won the game");
+        alert("player 2 won the game");
+        location.reload();
+    }
+    else if ((a=="O"||a=="X")&&(b=="O"||b=="X")&&(c=="O"||c=="X")&&(d=="O"||d=="X")&&(e=="O"||e=="X")&&(f=="O"||f=="X")&&(g=="O"||g=="X")&&(h=="O"||h=="X")&&(i=="O"||i=="X")) {
+        alert("Match Tie");
+        location.reload();
+        
     }
 }

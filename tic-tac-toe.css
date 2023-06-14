@@ -1,3 +1,6 @@
+body{
+    background-color: antiquewhite;
+}
 .board{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -7,13 +10,25 @@
     grid-gap: 1rem;
     background-color: rgb(25, 41, 41);
 }
+span{
+    font-size: 3em;
+    color: rgb(218, 19, 95);
+}
 header{
         width: 50%;
         margin: 1em auto;
+        text-align: center;
+}
+.notation{
+    font-size: larger;
+}
+.note{
+    font-size: 14px;
 }
 .square{
    min-height: 1.3em;
-   background-color: rgb(255, 255, 255);
+   
+   background-color: antiquewhite;
    font-size: 5rem;
    text-align: center;
 }
